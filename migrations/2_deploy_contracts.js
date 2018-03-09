@@ -7,11 +7,11 @@ Date.prototype.getUnixTime = function() { return this.getTime()/1000|0 };
 
 
 module.exports = function(deployer) 
-{  // StartTime: "Monday 19 March 2018 00:00:00 GMT-5"
-    var publicSaleStartTime = new Date("Sun, 18 Mar 2018 19:00:00 GMT").getUnixTime();
+{  // StartTime: "Monday 09 April 2018 00:00:00 GMT-5"
+    var publicSaleStartTime = new Date("Sun, 08 Apr 2018 19:00:00 GMT").getUnixTime();
     
-   // EndTime: "Sun 19 April 2018 24:00:00 GMT-5"
-    var publicSaleEndTime   = new Date("Sun, 15 Apr 2018 19:00:00 GMT").getUnixTime();
+   // EndTime: "Sun 06 May 2018 24:00:00 GMT-5"
+    var publicSaleEndTime   = new Date("Sun, 06 May 2018 19:00:00 GMT").getUnixTime();
 
     return GainmersSALE.new(
         publicSaleStartTime,

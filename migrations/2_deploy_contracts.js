@@ -7,12 +7,12 @@ Date.prototype.getUnixTime = function() { return this.getTime()/1000|0 };
 
 
 module.exports = function(deployer) 
-{  console.log("GainmersTOKEN           : "+ Date.now);
-   //+5 horas
+{  // StartTime: "Monday 19 March 2018 00:00:00 GMT-5"
     var publicSaleStartTime = new Date("Sun, 18 Mar 2018 19:00:00 GMT").getUnixTime();
-    var publicSaleEndTime   = new Date("Sun, 15 Apr 2018 19:00:00 GMT").getUnixTime();
-   // var tokenSaleContract;
     
+   // EndTime: "Sun 19 April 2018 24:00:00 GMT-5"
+    var publicSaleEndTime   = new Date("Sun, 15 Apr 2018 19:00:00 GMT").getUnixTime();
+
     return GainmersSALE.new(
         publicSaleStartTime,
         publicSaleEndTime,
@@ -20,9 +20,9 @@ module.exports = function(deployer)
 
         .then(function(result)
         {
-            //tokenSaleContract = result;
+            //Showing the Crowdsale Address and the Token address
                  console.log("GainmersSALE            : "+result.address);
-            result.token.call()
+                 result.token.call()
                 .then(function (res)
                 {
                  console.log("GainmersTOKEN           : "+ res);

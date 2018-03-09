@@ -93,7 +93,7 @@ contract ModifiedCrowdsale {
         // update state
         weiRaised = weiRaised.add(weiAmount);
 
-        require(token.transfer(_beneficiary, tokens)); // Request Modification : changed here - tranfer instead of mintable
+        require(token.transfer(_beneficiary, tokens)); 
         TokenPurchase(_beneficiary, weiAmount, tokens);
 
         forwardFunds();
@@ -132,17 +132,7 @@ contract ModifiedCrowdsale {
     {
         return now > endTime;
     }
-/*
-    modifier onlyBeforeSale() {
-        require(now < startTime);
-        _;
-    }
- Request Modification : Add check 24hours before token sale
-    modifier only24HBeforeSale() {
-        require(now < startTime.sub(1 days));
-        _;
-    }
-*/
+
 
     /**
       * @dev Get the bonus based on the buy time 

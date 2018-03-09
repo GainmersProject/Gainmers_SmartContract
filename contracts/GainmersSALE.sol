@@ -24,7 +24,7 @@ contract GainmersSALE is Ownable, CappedCrowdsale {
 
    
 
-    /*Initial distribution of the Tokens*/
+    /**Initial distribution of the Tokens*/
 
     // Token initialy distributed for the team management and developer incentives (10%)
     address public constant TeamWallet = 0x627306090abaB3A6e1400e9345bC60c78a8BEf57;
@@ -69,7 +69,7 @@ contract GainmersSALE is Ownable, CappedCrowdsale {
 
     /**
      * @dev Handles the creation of the GainmersTOKEN
-     * @returns the  StandardToken 
+     * @return the  StandardToken 
      */
     function createTokenContract () 
       internal 
@@ -85,7 +85,7 @@ contract GainmersSALE is Ownable, CappedCrowdsale {
     /**
      * @dev Drain the remaining tokens of the crowdsale to the TeamWallet account
      * @dev Only for owner
-     * @returns the StandardToken 
+     * @return the StandardToken 
      */
     function drainRemainingToken () 
       public
@@ -96,7 +96,7 @@ contract GainmersSALE is Ownable, CappedCrowdsale {
     }
 
 
-    /*
+    /** 
     * @dev Allows the early transfer of tokens if the ICO end before the end date
     */
 

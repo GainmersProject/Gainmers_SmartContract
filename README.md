@@ -5,7 +5,7 @@ In this document we will cover the token sale specifications and details for the
 
 * Total Token Supply: 100,000,000 GMR
 * Crowdsale Supply: 60,000,000 GMR
-* Pricing: 1 ETH = 1160 GMR 
+* Pricing: 1 ETH = 1660 GMR 
 * HardCap: 30000 ETH
 * Bonus: 20% the first week after contract deployment, 10% the second and 5 % the third week.
 * Start Date: April 9 , 00 am  UTC-5 

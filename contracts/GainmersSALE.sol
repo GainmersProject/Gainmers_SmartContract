@@ -20,7 +20,7 @@ contract GainmersSALE is Ownable, CappedCrowdsale {
     uint private constant Hardcap = 30000 ether;
 
     //Exchange rate EHT/ GMR token
-    uint private constant RateExchange = 1160;
+    uint private constant RateExchange = 1660;
 
    
 
